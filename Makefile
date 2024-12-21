@@ -1,4 +1,4 @@
-all: program1 program2 program3 program4 program5
+all: program1 program2 program3 program4 program5 program6
 
 program1:
 	gcc -Wall -o main sample.c
@@ -10,3 +10,5 @@ program4:
 	gcc -Wall -o main CWE-400_Uncontrolled_Resource_Consumption.c
 program5:
 	gcc -Wall -o main CWE-404_Improper_Resource_Shutdown_or_Release.c
+program6:
+	gcc -Wall -o main CWE-665_Improper_Initialization.c
