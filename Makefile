@@ -1,4 +1,4 @@
-all: program1 program2 program3 program4 program5 program6 program7 program8 program9
+all: program1 program2 program3 program4 program5 program6 program7 program8 program9 program10
 
 program1:
 	gcc -Wall -o main sample.c
@@ -18,4 +18,6 @@ program8:
 	gcc -Wall -o main CWE-22_Path_Traversal.c
 program9:
 	gcc -Wall -o main CWE-190_Integer_Overflow.c
+program10:
+	gcc -Wall -o main CWE-193_Off_by_One.c
 
