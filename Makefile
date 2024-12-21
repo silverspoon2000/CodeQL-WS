@@ -1,10 +1,10 @@
-#all:
-#   gcc -o main sample.c
+all:
+  gcc -o main sample.c sample2.c
 
-all: program1
+#all: program1
 
-program1: sample.c
-    gcc -o main sample.c
+#program1: sample.c
+ #   gcc -o main sample.c
 
 #program2: main sample2.c
 #    gcc -o program2 sample2.c
