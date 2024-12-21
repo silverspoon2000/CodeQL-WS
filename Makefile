@@ -3,7 +3,7 @@
 
 all: program1
 
-program1: main sample.c
+program1: sample.c
     gcc -o program1 sample.c
 
 #program2: main sample2.c
