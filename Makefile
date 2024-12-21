@@ -1,3 +1,5 @@
+#all:
+#   gcc -o main sample.c
 
 all: program1
 
