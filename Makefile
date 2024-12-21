@@ -1,8 +1,8 @@
 
 all: program1 program2
 
-program1: sample.c
-    gcc -o main sample.c
+program1: main sample.c
+    gcc -o program1 sample.c
 
-program2: sample2.c
-    gcc -o main sample2.c
+program2: main sample2.c
+    gcc -o program2 sample2.c
