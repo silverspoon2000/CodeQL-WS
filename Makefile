@@ -1,4 +1,4 @@
-all: program1 program2 program3 program4 program5 program6
+all: program1 program2 program3 program4 program5 program6 program7
 
 program1:
 	gcc -Wall -o main sample.c
@@ -12,3 +12,5 @@ program5:
 	gcc -Wall -o main CWE-404_Improper_Resource_Shutdown_or_Release.c
 program6:
 	gcc -Wall -o main CWE-665_Improper_Initialization.c
+program7:
+	gcc -Wall -o main CWE-666_Operation_on_Resource_in_Wrong_Phase_of_Lifetime.c
