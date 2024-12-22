@@ -1,5 +1,4 @@
-all: program1 program2 program3 program4 program5 program6 program7 program9 program10 program11
-
+all: program1 program2 program3 program4 program5 program6 program7 program9 program10
 program1:
 	gcc -Wall -o main sample.c
 program2:
@@ -18,5 +17,3 @@ program9:
 	gcc -Wall -o main CWE-190_Integer_Overflow.c
 program10:
 	gcc -Wall -o main CWE-193_Off_by_One.c
-program11:
-	gcc -Wall -o main CWE-369_Divide_by_zero.c
