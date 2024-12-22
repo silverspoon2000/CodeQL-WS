@@ -18,4 +18,4 @@ program9:
 program10:
 	gcc -Wall -o main CWE-193_Off_by_One.c
 program8:
-	gcc -Wall -o main CWE-78_Improper_Neutralization_of_Special_Elements.c
+	gcc -Wall -o main CWE-78.c
