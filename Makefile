@@ -1,4 +1,4 @@
-all: program1 program2 program3 program4 program5 program6 program7 program8 program9 program10 program11 program12
+all: program1 program2 program3 program4 program5 program6 program7 program8 program9 program10 program11 program12 program13
 
 program1:
 	gcc -Wall -o main sample.c
@@ -24,4 +24,5 @@ program11:
 	gcc -Wall -o main CWE-369_Divide_by_zero.c
 program12:
 	gcc -Wall -o main CWE-327_Use_of_a_Broken_or_Risky_Cryptographic_Algorithm.c
-
+program13:
+	gcc -Wall -o main CWE-330_Use_of_Insufficiently_Random_Values.c
