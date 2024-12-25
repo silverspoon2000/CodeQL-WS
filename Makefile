@@ -1,4 +1,7 @@
-all: program2
+all: program1 program2
+
+program1:
+	gcc -o main sample.c
 
 program2:
-	gcc -o main sample.c
+	gcc -o trial improper.c
