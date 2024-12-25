@@ -1,3 +1,4 @@
+#include <stdio.h>
 int writeDataFromSocketToFile(char *host, int port)
 {
     char filename[FILENAME_SIZE];
