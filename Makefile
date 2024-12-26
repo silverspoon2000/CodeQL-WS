@@ -1,3 +1,3 @@
 all: 
-	gcc -o main SimLab2.c
+	gcc -o main sample.c
 
