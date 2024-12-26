@@ -1,6 +1,3 @@
-all: program1 program2
+all: 
+	gcc -o main SimLab2.c
 
-program1:
-	gcc -o main CWE-707Sim1.c
-program2:
-	gcc -o trial improper.c
