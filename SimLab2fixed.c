@@ -6,7 +6,8 @@
 #define BUFSIZE 256
 
 
-void encodeShellString(const char* input, char* output, size_t output_size) {
+//void encodeShellString(const char* input, char* output, size_t output_size)
+void encodeShellString(const char* input, char* output){
  /*   const char* dangerous_chars = ";&|><$`!{}[]()\"'\\";
     size_t out_index = 0;
 
@@ -33,7 +34,8 @@ int main(int argc, char** argv) {
     char encoded_arg[BUFSIZE] = "";
 
     // Encode the file address input to mitigate command-line injection
-    encodeShellString(argv[1], encoded_arg, BUFSIZE);
+    //encodeShellString(argv[1], encoded_arg, BUFSIZE);
+    encodeShellString(argv[1], encoded_arg);
     // strcat(cmd, argv[1]);
     // concatenate using strncat instead of strcat, and check byte size of what's copied to prevent buffer overflow
     if (strncat(cmd, encoded_arg, BUFSIZE - strlen(cmd) - 1) == NULL) {
@@ -42,10 +44,10 @@ int main(int argc, char** argv) {
     }
     system(cmd);
     // Execute the encoded shell command, error msg to user if command can't be executed
-    int result = system(cmd);
+    /*int result = system(cmd);
     if (result == -1) {
         fprintf(stderr, "Error: Failed to execute command.\n");
         return -1;
-    }
+    }*/
     return 0;
 }
