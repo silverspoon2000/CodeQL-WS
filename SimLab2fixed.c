@@ -5,7 +5,7 @@
  
 #define BUFSIZE 256
 
-
+/*
 void encodeShellString(const char* input, char* output, size_t output_size) {
     const char* dangerous_chars = ";&|><$`!{}[]()\"'\\";
     size_t out_index = 0;
@@ -20,7 +20,7 @@ void encodeShellString(const char* input, char* output, size_t output_size) {
     }
     output[out_index] = '\0';
 }
-    
+*/
 // This program prints the size of a specified file in bytes
 int main(int argc, char** argv) {
     // Ensure that the user supplied exactly one command line argument
