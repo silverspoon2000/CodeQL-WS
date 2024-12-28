@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
     char encoded_arg[BUFSIZE] = "";
 
     // Encode the file address input to mitigate command-line injection
-    encode_fileaddress(argv[1], encoded_arg);
+    encodeShellString(argv[1], encoded_arg);
     // strcat(cmd, argv[1]);
     // concatenate using strncat instead of strcat, and check byte size of what's copied to prevent buffer overflow
     if (strncat(cmd, encoded_fileaddress, BUFSIZE - strlen(cmd) - 1) == NULL) {
