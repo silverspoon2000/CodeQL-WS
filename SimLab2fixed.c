@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     encodeShellString(argv[1], encoded_arg, BUFSIZE);
     // strcat(cmd, argv[1]);
     // concatenate using strncat instead of strcat, and check byte size of what's copied to prevent buffer overflow
-    if (strncat(cmd, encoded_fileaddress, BUFSIZE - strlen(cmd) - 1) == NULL) {
+    if (strncat(cmd, encoded_arg, BUFSIZE - strlen(cmd) - 1) == NULL) {
         fprintf(stderr, "Error: File path too long.\n");
         return -1;
     }
