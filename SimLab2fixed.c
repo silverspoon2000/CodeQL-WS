@@ -42,12 +42,12 @@ int main(int argc, char** argv) {
         fprintf(stderr, "Error: File path too long.\n");
         return -1;
     }
-    system(cmd);
+   // system(cmd);
     // Execute the encoded shell command, error msg to user if command can't be executed
-    /*int result = system(cmd);
+    int result = system(cmd);
     if (result == -1) {
         fprintf(stderr, "Error: Failed to execute command.\n");
         return -1;
-    }*/
+    }
     return 0;
 }
