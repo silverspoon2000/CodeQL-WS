@@ -1,3 +1,3 @@
 all: 
-	gcc -o main SimLab2fixed.c
+	gcc -o main SimLab3.c
 
